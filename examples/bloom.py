@@ -4,7 +4,7 @@ from transformers import BloomForCausalLM, BloomTokenizerFast
 tokenizer = BloomTokenizerFast.from_pretrained("bigscience/bloom-560m")
 model = BloomForCausalLM.from_pretrained("bigscience/bloom-560m")
 
-prompt = "It was a dark and stormy night"
+prompt = "Fui na esquina comprar pão e"
 result_length = 50
 inputs = tokenizer(prompt, return_tensors="pt")
 
