@@ -8,7 +8,6 @@ LENGTH = 1000
 
 def resposta(prompt, length):
   inputs = tokenizer(prompt, return_tensors="pt")
-
   outputs = model.generate(
       inputs["input_ids"],
       max_length=length, 
